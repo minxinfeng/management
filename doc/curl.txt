@@ -1,0 +1,13 @@
+
+--banner列表信息
+curl -H "Content-type: application/json" -X POST -d '{"start":"0","size":10 }' http://localhost:8080/manage/getBannerInfo
+
+--分类列表信息
+curl -H "Content-type: application/json" -X POST -d '{"start":"0","size":10 }' http://localhost:8080/manage/getTypeInfoList
+
+--热门列表
+curl -H "Content-type: application/json" -X POST -d '{"start":"0","size":10 }' http://localhost:8080/manage/getHotInfoList
+
+--列表配置信息
+curl -H "Content-type: application/json" -X POST -d '{"start":"0","size":10 ,"listName":"热门贷款"}' http://localhost:8080/manage/getConfigInfoList
+curl -H "Content-type: application/json" -X POST -d '{"start":"0","size":10 }' http://localhost:8080/manage/getConfigInfoList
